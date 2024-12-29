@@ -100,7 +100,7 @@ public class StatementInterfaceDemo {
 		boolean status = false;
 		try {
 
-			if (validateEmp(empId) == 1) {
+		if (validateEmp(empId) == 1) {
 				String query = "UPDATE emp SET salary=" + salary + " WHERE id=" + empId;
 				st.executeUpdate(query);
 				status = true;
