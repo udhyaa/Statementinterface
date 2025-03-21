@@ -87,7 +87,7 @@ public class StatementInterfaceDemo {
 				status = true;
 			} else
 
-				System.out.println("No such Employee Record.....");
+		System.out.println("No such Employee Record.....");
 
 		} catch (SQLException e) {
 
@@ -109,7 +109,7 @@ public class StatementInterfaceDemo {
 
 		} catch (SQLException e) {
 
-			System.out.println("Error...." + e.getMessage());
+	System.out.println("Error...." + e.getMessage());
 		}
 		return status;
 	}
@@ -126,18 +126,20 @@ public class StatementInterfaceDemo {
 			 * System.out.println("::::"+rs.getInt(1));
 			 */
 
-			if (rs.next()) {
-				while (rs.next()) {
+		if (rs.next()) {
+			while (rs.next()) {
 
-					System.out.println(rs.getInt(1) + "\t" + rs.getString(2) + "\t" + rs.getDouble(3));
+	System.out.println(rs.getInt(1) + "\t" + rs.getString(2) + "\t" + rs.getDouble(3));
 				}
 			} else
 				System.out.println("No Employee Records.....");
 			rs.close();
 
-		} catch (SQLException e) {
+		} 
+catch (SQLException e)
+ {
 
-			System.out.println("Error...." + e.getMessage());
+System.out.println("Error...." + e.getMessage());
 		}
 	}
 
@@ -145,10 +147,12 @@ public class StatementInterfaceDemo {
 		try {
 			st.close();
 			cn.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+		} 
+catch (SQLException e)
+ {
+// TODO Auto-generated catch block
+		e.printStackTrace();
+	   }
+	 }
 
 }
